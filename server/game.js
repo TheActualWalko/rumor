@@ -1,6 +1,6 @@
 /* global module, require */
 
-var _                    = require("underscore");
+var _ = require("underscore");
 var Character            = require("./character.js");
 var Player               = require("./player.js");
 var genSpecialist        = require("./gen-specialist.js");

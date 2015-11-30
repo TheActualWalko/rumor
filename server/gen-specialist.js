@@ -1,6 +1,6 @@
 /* global module, require */
 
-var _                    = require("underscore");
+var _ = require("underscore");
 
 var Specialist = require("./specialist.js");
 

@@ -1,6 +1,6 @@
 /* global module, require */
 
-var _                    = require("underscore");
+var _ = require("underscore");
 
 module.exports = function(){
   "use strict";
