@@ -57,14 +57,18 @@ module.exports = function(){
     },
     
     begin : function(){
-      this.period = this.getNextPeriodName();
-      this.afterChangePeriod();
+      this.advancePeriod();
+      this.afterAdvancePeriod();
     },
     
     advance : function(){
-      this.beforeChangePeriod();
+      this.beforeAdvancePeriod();
+      this.advancePeriod();
+      this.afterAdvancePeriod();
+    },
+
+    advancePeriod : function(){
       this.period = this.getNextPeriodName();
-      this.afterChangePeriod();
     },
     
     getNextPeriodName : function(){
@@ -80,7 +84,7 @@ module.exports = function(){
       }.bind(this));
     },
     
-    beforeChangePeriod : function(){
+    beforeAdvancePeriod : function(){
       this.forEachActiveSpecialist( function( specialist ){
         specialist.effects.onPeriodEnd.forEach( function( effect ){
           effect( specialist, this );
@@ -88,7 +92,7 @@ module.exports = function(){
       }.bind(this));
     },
     
-    afterChangePeriod : function(){
+    afterAdvancePeriod : function(){
       this.updateActivityPoints();
       this.advanceRumors();
       this.triggerQueuedActions();

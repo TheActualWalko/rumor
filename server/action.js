@@ -12,7 +12,7 @@ module.exports = function(){
 
   Action.prototype = {
     cost : 0,
-    onTrigger : function( game ){
+    onTrigger : function(){
       throw new Error( "The base Action type cannot be triggered." );
     },
     trigger : function( game ){
