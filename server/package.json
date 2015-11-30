@@ -1,0 +1,14 @@
+{
+  "name": "rumor",
+  "version": "0.0.1",
+  "dependencies": {
+    "body-parser" : ">=1.14.1",
+    "underscore"  : ">=1.8.3"
+  },
+  "engines": {
+    "node": ">=0.10.0"
+  },
+  "scripts": {
+    "test": "grunt test"
+  }
+}

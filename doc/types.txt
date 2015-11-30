@@ -1,0 +1,67 @@
+Player = {
+  character : Character
+}
+
+Character = {
+  player           : Player,
+  name             : String,
+  popularity       : Number, // affects rumor-starting power and rumor-detecting power
+  skills           : {       // affects # notes gained per class
+    class1 : Number,
+    class2 : Number,
+    class3 : Number
+  },
+  notes            : {       // consumed at the beginning of each class to maintain marks and teacher relationships
+    class1 : Number,
+    class2 : Number,
+    class3 : Number
+  },
+  favouritism      : {       // contributes to hit chance of actions performed while in class
+                             // reduces # notes required at beginning of class
+    class1 : Number,
+    class2 : Number,
+    class3 : Number
+  },
+  specialists      : [ 
+    Specialist
+  ],
+  activityPoints   : Number  // resets to a global default at the beginning of each period
+  actionQueue      : {
+    beforeClass : [ Action ],
+    class1      : [ Action ],
+    recess      : [ Action ],
+    class2      : [ Action ],
+    lunch       : [ Action ],
+    class3      : [ Action ],
+    afterClass  : [ Action ]
+  },
+  actionHistory : [ Action ]
+}
+
+Specialist = {
+  name        : String,
+  popularity  : Number,           // usually negative. added immediately and repeatedly to Character's popularity if Character is revealed as the owner
+  owner       : Character || null
+  effects     : {
+    onAction      : [ function ],
+    onPeriodStart : [ function ],
+    onPeriodEnd   : [ function ]
+  }
+}
+
+Action = AddSpecialistAction || RemoveSpecialistAction || StartMinorRumorAction || StartMajorRumorAction || PassNoteAction
+
+AddSpecialistAction     = { timestamp : Number, initiator : Character, specialist : Specialist }
+RemoveSpecialistAction  = { timestamp : Number, initiator : Character, specialist : Specialist }
+
+StartMinorRumorAction   = { timestamp : Number, initiator : Character, power   : Number, target : Character }
+StartMajorRumorAction   = { timestamp : Number, initiator : Character, rumor   : Rumor }
+
+PassNoteAction          = { timestamp : Number, initiator : Character, note    : String, target : Character }
+
+Rumor = {
+  initiator : Character,
+  target    : Character,
+  subject   : Action,
+  power     : Number
+}

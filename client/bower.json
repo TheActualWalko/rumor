@@ -1,0 +1,8 @@
+{
+  "name": "rumor",
+  "version": "0.0.1",
+  "dependencies": {
+    "jquery": ">=2.1.1",
+    "underscore": ">=1.8.3"
+  }
+}
