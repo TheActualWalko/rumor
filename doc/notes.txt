@@ -1,0 +1,15 @@
+Some thoughts on the core mechanics:
+
+  Whether or not a rumor turns out to be true should mean something.
+
+  If performing an action has a chance of starting a rumor, and this is the way MOST rumors are started, then manually starting a rumor that you do not know to be based on fact has the effect of leading players to believe something may be happening. Without actual events spawning rumours, rumor truth is irrelevant.
+
+  Investigating seems like an obvious way to spend AP. Here's how it might work:
+
+    You spend all of your AP during recess or lunch observing a player.
+    
+    If they're observing you, or observing another player, nothing happens.
+    
+    If they're spending AP starting rumors, making friends, etc, you have a random chance each action to notice and collect evidence. (A photo of player 2 getting notes from the math girl, a message on a piece of paper from player 3 starting a rumor about you, etc)
+    
+    Later, you can start a rumor that the evidence will support, and use the evidence to boost the rumor's health/power at a key moment. Or you can keep the knowledge to yourself and use the strategic information to your advantage. Or you can show the evidence to the player to blackmail them!
