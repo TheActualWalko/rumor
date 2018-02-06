@@ -1,0 +1,59 @@
+Resources:
+
+  - Notes
+    - Three note types (one for each class)
+    - You need some number of notes at the beginning of each class or else your relationship with that teacher goes down.
+    - You can gain some number of extra notes from trades with the other players, or from your NPC friends.
+    - Tests, a small number (one or two) of which will occur per week, require a lot of notes; more notes increase your chances of getting a high mark that will improve your relationship with the teacher of that class
+
+  - Friends
+    - You have a number of friends, which influences your ability to spread rumors.
+    - This number is perhaps public knowledge?
+    - Having more friends means you will hear about rumours earlier.
+
+  - Teacher Relationships
+    - Every player has a certain relationship score with each teacher
+    - When you are in class with a teacher that likes you, you can pass notes and perform actions with a smaller chance of being caught and given detention. (And vice versa)
+    - If you have the required number of notes each day, the teachers will like you slightly more as the week goes on.
+    - Having extra notes on the day of a test will cause a teacher's appreciation of you to go up significantly.
+
+  - Specialists
+    - Specialists are the uncool people at school that give you special abilities.
+    - Specialists can give you extra notes of a certain type, add a fixed number to your friends when spreading or receiving rumours, etc.
+
+  - Activity points
+    - Activity points are spent during lunch, recess, and class to initialize and investigate rumours, or perform more basic actions like making friends, participating in one-time activities, gaining a new specialist, etc.
+
+
+Rumours:
+
+  - Rumours are spread through your friends. Players with more friends can spread rumours more quickly.
+
+  - Major Rumours
+    - A major rumour is a statement about a gameplay action that a player might have taken
+    - Truthful major rumours appear by chance when a player does something.
+    - False major rumours appear by chance at random times (perhaps).
+    - Major rumours can be investigated by a player: e.g. "Player 1 is friends with the math nerd" -> investigate by talking to the math nerd
+
+  - Minor Rumours
+    - A minor rumour is the basic attack/defense of the game.
+    - There are minor rumours that are negative (they subtract friends) and minor rumours that are positive (they add friends)
+    - Minor rumours cannot be confirmed or denied. At the end of each period (or perhaps day) your total friend count is modified based on the number and power of positive and negative rumours about you.
+
+
+Timetable:
+
+  - The week is broken up into 5 days
+
+  - Each day has three periods. After period one there is a recess, after period two is lunch.
+    - During a period, you have a small number of action points, and using them comes with a risk of being caught by the teacher running that class.
+    - During recess, you have more action points than during a period.
+    - During lunch, you have more action points than during recess.
+
+  - After school is club meetings. Each day has a different club (drama, volleyball, etc) and each club offers opportunities for the players to impress the love interest.
+
+  - At the beginning of each day, you have a period of time where you can indicate which actions you would like to take during each period and break. You can change these any time.
+
+  - You can choose to skip class for bonus activity points and no risk. During this time you can formulate rumours or perform other actions.
+
+

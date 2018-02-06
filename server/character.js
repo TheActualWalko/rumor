@@ -46,7 +46,6 @@ module.exports = function(){
       if( this.statsRolled ){
         throw new Error("This Character has already rolled for stats");
       }
-      this.statsRolled = true;
       var statRollRanges = {
         skills      : [ 50, 100 ],
         notes       : [ 0, 4 ],
@@ -61,6 +60,7 @@ module.exports = function(){
           statGroup[ className ] = Math.round( Math.random() * ( max - min ) ) + min;
         });
       }.bind(this));
+      this.statsRolled = true;
     },
     log : function( prefix ){
       console.log( "" );
